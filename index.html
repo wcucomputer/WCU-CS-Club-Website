@@ -6,14 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<title>WCU Computer Science Club</title>
 	
-	<style type="text/css">
-		#about_click { }
-		#how_to_join_click { }
-		#upcoming_events_click { }
-		#orgsync_click { }
-		#changing_content { }
-	</style>
-	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	
 	<script type="text/javascript">
@@ -45,56 +37,6 @@
 			
 		});
 	</script>
-	<!--
-	<script>
-		window.onload = function() {
-			var aboutClick = document.getElementById('about_click');
-			var howToJoinClick = document.getElementById('how_to_join_click');
-			var upcomingEventsClick = document.getElementById('upcoming_events_click');
-			var orgsyncClick = document.getElementById('orgsync_click');
-			
-			var dynamicContentHeader = document.getElementById('dynamic_content_header');
-			var changingContent = document.getElementById('changing_content');
-			
-			aboutClick.onmouseover = function() {
-				this.style.cursor = 'pointer';
-			};
-			
-			aboutClick.onclick = function() {
-				dynamicContentHeader.innerHTML = 'About Us';
-				changingContent.innerHTML = 'You clicked about';
-			}; 
-			
-			howToJoinClick.onmouseover = function() {
-				this.style.cursor = 'pointer';
-			};
-			
-			howToJoinClick.onclick = function() {
-				dynamicContentHeader.innerHTML = 'How To Join';
-				changingContent.innerHTML = 'You clicked how to join';
-			};
-			
-			upcomingEventsClick.onmouseover = function() {
-				this.style.cursor = 'pointer';
-			};
-			
-			upcomingEventsClick.onclick = function() {
-				dynamicContentHeader.innerHTML = 'Upcoming Events';
-				changingContent.innerHTML = 'April 13, 2012: First Annual Programming Contest';
-			};
-			
-			orgsyncClick.onmouseover = function() {
-				this.style.cursor = 'pointer';
-			};
-			
-			orgsyncClick.onclick = function() {
-				dynamicContentHeader.innerHTML = 'OrgSync';
-				changingContent.innerHTML = 'You clicked orgsync';
-			};
-		};
-		
-	</script>
-	-->
 </head>
 
 <body>
@@ -104,12 +46,12 @@
 		
 		<div id="menu">
 			<ul class="menu_list">
-				<li class="menu_element">Home</li>
-				<li class="menu_element"><a href="minutes.html">Minutes</a></li>
-				<li class="menu_element"><a href="resources.html">Resources</a></li>
-				<li class="menu_element"><a href="tutoring.html">Tutoring</a></li>
-				<li class="menu_element"><a href="members.html">Members</a></li>
-				<li class="menu_element"><a href="contact.html">Contact</a></li>
+				<li class="menu_element"><a href="index.html" class="menu_link">Home</a></li>
+				<li class="menu_element"><a href="minutes.html" class="menu_link">Minutes</a></li>
+				<li class="menu_element"><a href="resources.html" class="menu_link">Resources</a></li>
+				<li class="menu_element"><a href="tutoring.html" class="menu_link">Tutoring</a></li>
+				<li class="menu_element"><a href="members.html" class="menu_link">Members</a></li>
+				<li class="menu_element"><a href="contact.html" class="menu_link">Contact</a></li>
 			</ul>
 		</div>
 	</header>
@@ -117,10 +59,10 @@
 	<div id="content_box">
 		<div id="content_list">
 			<ul class="content_scroll">
-				<li class="content_element"><div><a href="#" id="about_click">About</a></div></li><br />
-				<li class="content_element"><div><a href="#" id="how_to_join_click">How To Join</a></div></li><br />
-				<li class="content_element"><div id="upcoming_events_click">Upcoming Events</div></li><br />
-				<li class="content_element"><div id="orgsync_click">OrgSync</div></li>
+				<li class="content_element"><div><a href="#" id="about_click" class="sidebar_link">About</a></div></li><br />
+				<li class="content_element"><div><a href="#" id="how_to_join_click" class="sidebar_link">How To Join</a></div></li><br />
+				<li class="content_element"><div><a href="#" id="upcoming_events_click" class="sidebar_link">Upcoming Events</a></div></li><br />
+				<li class="content_element"><div><a href="#" id="orgsync_click" class="sidebar_link">OrgSync</a></div></li>
 			</ul>
 		</div>
 		<h1 id="dynamic_content_header" class="content_header">About Us</h1>
