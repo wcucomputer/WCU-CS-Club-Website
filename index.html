@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<title>WCU Computer Science Club</title>
 	
-	<style>
+	<style type="text/css">
 		#about_click { }
 		#how_to_join_click { }
 		#upcoming_events_click { }
@@ -26,8 +26,14 @@
 			$("#about_click").click(function(e) {
 				e.preventDefault();
 				fadeTransition("#dynamic_content_header", 800, "About Us");
-				fadeTransition("#changing_content", 800, aboutUsText);
+				fadeTransition("#changing_content", 900, aboutUsText);
 				
+			});
+			
+			$("#how_to_join_click").click(function(e) {
+				e.preventDefault();
+				fadeTransition("#dynamic_content_header", 800, "How To Join");
+				fadeTransition("#changing_content", 900, "");
 			});
 			
 			function fadeTransition(element, length, text) {
@@ -94,7 +100,7 @@
 <body>
 <div id="main_div">
 	<header id="nav"> <!-- logo and navigation -->
-		<img src="images/logo.png" id="club_logo" alt="West Chester University Computer Science Club logo" />
+		<img src="images/logo.png" height="75px" id="club_logo" alt="West Chester University Computer Science Club logo" />
 		
 		<div id="menu">
 			<ul class="menu_list">
@@ -112,7 +118,7 @@
 		<div id="content_list">
 			<ul class="content_scroll">
 				<li class="content_element"><div><a href="#" id="about_click">About</a></div></li><br />
-				<li class="content_element"><div id="how_to_join_click">How To Join</div></li><br />
+				<li class="content_element"><div><a href="#" id="how_to_join_click">How To Join</a></div></li><br />
 				<li class="content_element"><div id="upcoming_events_click">Upcoming Events</div></li><br />
 				<li class="content_element"><div id="orgsync_click">OrgSync</div></li>
 			</ul>
