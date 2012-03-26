@@ -13,13 +13,76 @@
 		}
 		
 		.resource_link {
-			color: #ddd;
+			color: #ccc;
 			font-family: 'lucida sans';
-			margin-left: 60px;
+			margin-left: 30px;
+			text-decoration: none;
+		}
+		.resource_link:visited {
+			color: #ccc;
+			text-decoration: none;
+		}
+		.resource_link:hover {
+			color: #ffffff;
 			text-decoration: none;
 		}
 		
 	</style>
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var education_text = '<a href="http://www.acm.org" class="resource_link" target="_none">Assocation for Computing Machinery</a><br />';
+			var standards_text = '';
+			var tech_news_text = '';
+			var fun_text = '';
+			
+			$("#education_click").mouseover(function() {
+				$(this).css('cursor', 'pointer');
+			});
+			$("#education_click").click(function(e) {
+				e.preventDefault();
+				fadeTransition("#dynamic_content_header", 800, "Education/Tutorials");
+				fadeTransition("#changing_content", 900, education_text);
+			});
+			
+			$("#standards_click").mouseover(function() {
+				$(this).css('cursor', 'pointer');
+			});	
+			$("#standards_click").click(function(e) {
+				e.preventDefault();
+				fadeTransition("#dynamic_content_header", 800, "Standards");
+				fadeTransition("#changing_content", 900, standards_text);
+			});
+			
+			$("#tech_news_click").mouseover(function() {
+				$(this).css('cursor', 'pointer');
+			});
+			$("#tech_news_click").click(function(e) {
+				e.preventDefault();
+				fadeTransition("#dynamic_content_header", 800, "Technology News");
+				fadeTransition("#changing_content", 900, tech_news_text);
+			});
+			
+			$("#fun_click").mouseover(function() {
+				$(this).css('cursor', 'pointer');
+			});
+			$("#fun_click").click(function(e) {
+				e.preventDefault();
+				fadeTransition("#dynamic_content_header", 800, "Fun Stuff!");
+				fadeTransition("#changing_content", 900, fun_text);
+			});
+			
+			function fadeTransition(element, length, text) {
+				$(element).fadeOut(length/2, function() {
+					$(element).html(text);
+					$(element).fadeIn(length/2, null);
+				});	
+			}
+		});
+	</script>
 </head>
 
 <body>
@@ -40,21 +103,24 @@
 	</header>
 	
 	<div id="content_box">
-		
-		<h1 class="content_header">Educational Resources</h1>
-		<p class="content_no_list">
-			<h2 class="link_section">Education & Tutorials</h2>
-				<a href="http://www.acm.org" class="resource_link" target="_blank">Association for Computing Machinery</a>
-			<h2 class="link_section">Standards</h2>
-			<h2 class="link_section">Technology News</h2>
-				<a href = "https://krebsonsecurity.com">Krebs On Security</a>
+		<div id="content_list">
+			<ul class="content_scroll">
+				<li class="content_element"><div id="education_click">Education/ Tutorials</div></li><br />
+				<li class="content_element"><div id="standards_click">Standards</div></li><br />
+				<li class="content_element"><div id="tech_news_click">Tech News</div></li><br />
+				<li class="content_element"><div id="fun_click">Fun!</div></li>
+			</ul>
+		</div>
+		<h1 id="dynamic_content_header" class="content_header">Resources</h1>
+		<p id="changing_content" class="content">
+			Please choose a category from the list on the right.
 		</p>
 	</div>
 	
 	<br />
 	
 	<div id="content_box">
-		<h1 class="content_header">West Chetser University Resources</h1>
+		<h1 class="content_header">West Chester University Resources</h1>
 		<p class="content_no_list">
 			There will be resources that specifically apply to West Chester University
 			students here.
