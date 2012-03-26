@@ -47,10 +47,12 @@ body {
 }
 
 .menu_link:visited {
+	text-decoration: none;
 	color: #000;
 }
 
 .menu_link:hover {
+	text-decoration: none;
 	color: #fff;
 }
 
@@ -71,6 +73,7 @@ body {
 }
 
 .menu_element:hover {
+	text-decoration: none;
 	background-color: #880088;
 	color: #fff;
 	box-shadow: inset 0px 0px 5px 0px #fff;
