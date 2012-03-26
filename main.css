@@ -5,14 +5,14 @@
 
 body {
 	background-color: #919191;
-	background-image: -webkit-linear-gradient(top, #220022, #969696);
-	background-image: -moz-linear-gradient(top, #220022, #969696);
+	background-image: -webkit-linear-gradient(top, #220022, #ccc);
+	background-image: -moz-linear-gradient(top, #220022, #ccc);
 	height: 100%;
 }
 
 #main_div {
 	background-color: #cfcfcf;
-	height: 1000px;
+	height: 1400px;
 	width: 900px;
 	margin: 0px auto;
 
