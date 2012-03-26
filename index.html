@@ -36,13 +36,16 @@
 									"April 20, 2012: Movie Night";
 			var orgsyncText = "";
 			
+			var headerFadeIn = 800;
+			var contentFadeIn = 1100;
+			
 			$("#about_click").mouseover(function() {
 				$(this).css('cursor', 'pointer');
 			});
 			$("#about_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "About Us");
-				fadeTransition("#changing_content", 900, aboutUsText);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "About Us");
+				fadeTransition("#changing_content", contentFadeIn, aboutUsText);
 				
 			});
 			
@@ -51,8 +54,8 @@
 			});
 			$("#how_to_join_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "How To Join");
-				fadeTransition("#changing_content", 900, howToJoinText);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "How To Join");
+				fadeTransition("#changing_content", contentFadeIn, howToJoinText);
 			});
 			
 			$("#upcoming_events_click").mouseover(function() {
@@ -60,8 +63,8 @@
 			});
 			$("#upcoming_events_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "Upcoming Events");
-				fadeTransition("#changing_content", 900, upcomingEventsText);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Upcoming Events");
+				fadeTransition("#changing_content", contentFadeIn, upcomingEventsText);
 			});
 			
 			$("#orgsync_click").mouseover(function() {
@@ -69,8 +72,8 @@
 			});
 			$("#orgsync_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "OrgSync");
-				fadeTransition("#changing_content", 900, orgsyncText);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "OrgSync");
+				fadeTransition("#changing_content", contentFadeIn, orgsyncText);
 			});
 			
 			

@@ -53,13 +53,16 @@
 			var tech_news_text = '<a href="http://krebsonsecurity.com" class="resource_link" target="_none">Krebs on Security</a><br />';
 			var fun_text = '';
 			
+			var headerFadeIn = 800;
+			var contentFadeIn = 1100;
+			
 			$("#education_click").mouseover(function() {
 				$(this).css('cursor', 'pointer');
 			});
 			$("#education_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "Education/Tutorials");
-				fadeTransition("#changing_content", 900, education_text);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Education/Tutorials");
+				fadeTransition("#changing_content", contentFadeIn, education_text);
 			});
 			
 			$("#standards_click").mouseover(function() {
@@ -67,8 +70,8 @@
 			});	
 			$("#standards_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "Standards");
-				fadeTransition("#changing_content", 900, standards_text);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Standards");
+				fadeTransition("#changing_content", contentFadeIn, standards_text);
 			});
 			
 			$("#tech_news_click").mouseover(function() {
@@ -76,8 +79,8 @@
 			});
 			$("#tech_news_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "Technology News");
-				fadeTransition("#changing_content", 900, tech_news_text);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Technology News");
+				fadeTransition("#changing_content", contentFadeIn, tech_news_text);
 			});
 			
 			$("#fun_click").mouseover(function() {
@@ -85,8 +88,8 @@
 			});
 			$("#fun_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", 800, "Fun Stuff!");
-				fadeTransition("#changing_content", 900, fun_text);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Fun Stuff!");
+				fadeTransition("#changing_content", contentFadeIn, fun_text);
 			});
 			
 			function fadeTransition(element, length, text) {
