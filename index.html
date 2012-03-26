@@ -36,6 +36,10 @@
 				fadeTransition("#changing_content", 900, "");
 			});
 			
+			$("#orgsync_click").mouseover(function() {
+				$(this).css('pointer', 'hand');
+			});
+			
 			function fadeTransition(element, length, text) {
 				$(element).fadeOut(length/2, function() {
 					$(element).html(text);
@@ -100,7 +104,7 @@
 <body>
 <div id="main_div">
 	<header id="nav"> <!-- logo and navigation -->
-		<img src="images/logo.png" height="75px" id="club_logo" alt="West Chester University Computer Science Club logo" />
+		<img src="images/logo.png" height="75px" width="320px" id="club_logo" alt="West Chester University Computer Science Club logo" />
 		
 		<div id="menu">
 			<ul class="menu_list">
