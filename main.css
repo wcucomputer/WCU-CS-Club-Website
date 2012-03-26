@@ -34,11 +34,11 @@ body {
 
 .menu_list {
 	list-style-type: none;
-	margin: 0;
 	margin-top: 25px;
 	margin-right: 0px;
 	padding: 0;
 	float: right;
+	font-size: 15px;
 }
 
 .menu_link:link {
