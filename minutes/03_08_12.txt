@@ -1,0 +1,21 @@
+pages overview: 
+home - featured project, weekly problem
+minutes
+- by date
+resources/links (with subsections)
+- educational and USEFUL resources (tutorials, etc)
+- developer tools, other software
+- standards (w3c, acm, etc.)
+- various news topics
+tutoring
+- availability by course name
+- how to sign up/who to contact
+members
+- brief bio/description
+- links to projects 
+- and alumni
+contact
+fun
+
+Tentatively, we are hoping to have a meeting to do more work on the website on the weekend of March 24th - March 25th. This will probably be at Sykes. 
+And a quick reminder: if you haven't done so already, please sign up for an account at github.com

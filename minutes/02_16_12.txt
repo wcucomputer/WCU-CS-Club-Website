@@ -1,0 +1,13 @@
+7:08 Meeting started
+7:18 Went over program
+7:22 Started Mac vs. Pc vs. Linux debate
+7:57 Meeting ended
+
+Programing problem of the week:
+Say that a "clump" in an array is a series of 2 or more adjacent elements of the same value. Return the number of clumps in the given array. 
+
+countClumps({1, 2, 2, 3, 4, 4}) ? 2
+countClumps({1, 1, 2, 1, 1}) ? 2
+countClumps({1, 1, 1, 1, 1}) ? 1
+
+http://codingbat.com/prob/p193817 
