@@ -48,10 +48,34 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			var education_text = '<a href="http://www.acm.org" class="resource_link" target="_none">Assocation for Computing Machinery</a><br />';
-			var standards_text = '';
-			var tech_news_text = '<a href="http://krebsonsecurity.com" class="resource_link" target="_none">Krebs on Security</a><br />';
-			var fun_text = '';
+			var education_text = '<a href="http://www.acm.org" class="resource_link" target="_none">Association for Computing Machinery (ACM)</a><br />' +
+									'<a href="http://www.ieee.org/index.html" class="resource_link" target="_none">Institute of Electrical and Electronics Engineers (IEEE)</a><br />' +
+									'<a href="http://jquery.com/" class="resource_link" target="_none">jQuery</a><br />' +
+									'<a href="http://csrc.nist.gov/" class="resource_link" target="_none">National Institute of Standards and Technology (NIST) - Info Security Resource Center</a><br />' +
+									'<a href="http://www.oracle.com/index.html" class="resource_link" target="_none">Oracle</a><br />' +
+									'<a href="http://www.python.org/" class="resource_link" target="_none">Python Programming Language</a><br />' +
+									'<a href="http://cypress.mcsr.olemiss.edu/unixhelp/" class="resource_link" target="_none">UNIX Help</a><br />' +
+									'<a href="http://www.w3.org/" class="resource_link" target="_none">World Wide Web Consortium (W3C)</a><br />';
+			var tutorials_text = '<a href="http://www.adobe.com/devnet.html" class="resource_link" target="_none">Adobe Developer Connection</a><br />' +
+									'<a href="http://labs.adobe.com/" class="resource_link" target="_none">Adobe Labs</a><br />' +
+									'<a href="http://code.google.com/edu/" class="resource_link" target="_none">Google Code University</a><br />' +
+									'<a href="http://docs.oracle.com/javase/tutorial/" class="resource_link" target="_none">Java Tutorials - Oracle</a><br />' +
+									'<a href="http://www.pcmech.com/" class="resource_link" target="_none">PCMech</a><br />' +
+									'<a href="http://phonegap.com/" class="resource_link" target="_none">PhoneGap - HTML5 app platform & mobile development framework</a><br />' +
+									'<a href="http://www.w3schools.com/" class="resource_link" target="_none">W3Schools</a><br />';
+			var tech_news_text = '<a href="http://www.computerworld.com/" class="resource_link" target="_none">Computer World</a><br />' +
+								'<a href="http://darkreading.com/" class="resource_link" target="_none">Dark Reading</a><br />' +
+								'<a href="http://gigaom.com/" class="resource_link" target="_none">GigaOM</a><br />' +
+								'<a href="http://krebsonsecurity.com" class="resource_link" target="_none">Krebs on Security</a><br />' + 
+								'<a href="http://techcrunch.com/" class="resource_link" target="_none">TechCrunch</a><br />' +
+								'<a href="http://www.technologyreview.com/" class="resource_link" target="_none">Technology Review</a><br />' +
+								'<a href="http://www.informationweek.com/whitepaper?itc=ddj-header-twdl" class="resource_link" target="_none">TechWeb - Digital Library</a><br />';
+			var fun_text = '<a href="http://codingbat.com/" class="resource_link" target="_none">CodingBat - Code Practice</a><br />' +
+								'<a href="http://projecteuler.net/" class="resource_link" target="_none">Project Euler</a><br />' +
+								'<a href="http://pygame.org/news.html" class="resource_link" target="_none">Pygame - Python library for game development</a><br />' +
+								'<a href="http://unity3d.com/" class="resource_link" target="_none">Unity - Game Engine</a><br />' +
+								'<a href="http://udk.com/" class="resource_link" target="_none">Unreal Development Kit - develop games that run on Unreal Engine</a><br />' +
+								'<a href="http://uva.onlinejudge.org/" class="resource_link" target="_none">UVa Online Judge - Programming Problems</a><br />';
 			
 			var headerFadeIn = 1000;
 			var contentFadeIn = 1000;
@@ -61,17 +85,17 @@
 			});
 			$("#education_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", headerFadeIn, "Education/Tutorials");
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Education/Standards");
 				fadeTransition("#changing_content", contentFadeIn, education_text);
 			});
 			
-			$("#standards_click").mouseover(function() {
+			$("#tutorials_click").mouseover(function() {
 				$(this).css('cursor', 'pointer');
 			});	
-			$("#standards_click").click(function(e) {
+			$("#tutorials_click").click(function(e) {
 				e.preventDefault();
-				fadeTransition("#dynamic_content_header", headerFadeIn, "Standards");
-				fadeTransition("#changing_content", contentFadeIn, standards_text);
+				fadeTransition("#dynamic_content_header", headerFadeIn, "Tutorials & Tools");
+				fadeTransition("#changing_content", contentFadeIn, tutorials_text);
 			});
 			
 			$("#tech_news_click").mouseover(function() {
@@ -122,8 +146,8 @@
 	<div id="content_box">
 		<div id="content_list">
 			<ul class="content_scroll">
-				<li class="content_element"><div id="education_click">Education/ Tutorials</div></li><br />
-				<li class="content_element"><div id="standards_click">Standards</div></li><br />
+				<li class="content_element"><div id="education_click">Education/ Standards</div></li><br />
+				<li class="content_element"><div id="tutorials_click">Tutorials</div></li><br />
 				<li class="content_element"><div id="tech_news_click">Tech News</div></li><br />
 				<li class="content_element"><div id="fun_click">Fun!</div></li>
 			</ul>
